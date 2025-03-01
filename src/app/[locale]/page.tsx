@@ -1,9 +1,10 @@
-import Projects from '@/components/Projects';
+import Hero from "./_components/Hero"
 
 export default function HomePage() {
   return (
     <>
-      <Projects />
+      <Hero />
     </>
   )
 }
+

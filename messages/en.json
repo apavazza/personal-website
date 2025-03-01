@@ -1,0 +1,148 @@
+{
+  "Navigation": {
+    "mainLinks": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "githubLink": {
+      "label": "GitHub",
+      "href": "https://github.com/apavazza"
+    }
+  },
+
+  "Metadata": {
+    "projects": {
+      "title": "Projects"
+    },
+    "about": {
+      "title": "About"
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+
+  "Hero": {
+    "tagline": "Software Developer",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+
+  "StackTerminal": {
+    "whoami": "Computer Science Student"
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "tagline": "A collection of projects that showcase my skills and experience in building modern applications.",
+    "projectsList": [
+      {
+        "name": "Password Manager",
+        "description": "A command line password manager",
+        "url": "https://github.com/apavazza/PasswordManager",
+        "tags": ["Cryptography", "C++", "CLI"]
+      },
+      {
+        "name": "Linux Distros",
+        "description": "Popularity analysis of Linux distributions",
+        "url": "https://github.com/apavazza/linux-distros",
+        "tags": ["Data Science", "Python"]
+      },
+      {
+        "name": "Tower Defense",
+        "description": "A tower defense game",
+        "url": "https://github.com/apavazza/tower_defense",
+        "tags": ["Stencyl", "Game"]
+      },
+      {
+        "name": "WriteWarp",
+        "description": "A blogging service",
+        "url": "https://github.com/apavazza/HCI",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Personal Website",
+        "description": "My personal website",
+        "url": "https://github.com/apavazza/apavazza.github.io",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Employee Manager",
+        "description": "An electron application for managing employees",
+        "url": "https://github.com/apavazza/employee-manager",
+        "tags": ["Electron", "JavaScript"]
+      },
+      {
+        "name": "eCommerce",
+        "description": "An eCommerce webapp",
+        "url": "https://github.com/apavazza/ecommerce",
+        "tags": ["Docker", "PHP"]
+      }
+    ]  
+  },
+
+  "Bio": {
+    "title": "Who Am I?",
+    "text": "I'm a computer science student with a strong interest in Linux, containerization (Docker, Podman, Kubernetes), and programming (C, C++, Go, Python). I'm passionate about data science, computer security, and web development (Next.js, React, Tailwind CSS). I also have experience with Git, DevOps (GitHub Actions), and game development using Stencyl. I'm always looking to learn more and take on new challenges."
+  },
+
+  "Education": {
+    "title": "Education",
+    "educationList": [
+      {
+          "year": "2024 - Present",
+          "degree": "Master of Science in Computing (M. Sc. Comp.)",
+          "institution": "University of Split",
+          "faculty": "Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture"
+      },
+      {
+          "year": "2022 - 2024",
+          "degree": "Bachelor of Science in Computing (B. Sc. Comp.)",
+          "institution": "University of Split",
+          "faculty": "Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture"
+      },
+      {
+          "year": "2015 - 2019",
+          "degree": "Computer Technician",
+          "institution": "Electrotechnical School Split",
+          "faculty": ""
+      }
+    ]
+  },
+
+  "ContactCard": {
+    "degree": "B. Sc. Comp.",
+    "revealNotice": "Click to reveal email"
+  },
+
+  "Footer": {
+    "notice": "All rights reserved."
+  },
+
+  "not-found": {
+    "t1": "Oops! Page Not Found",
+    "t2": "Looks like this page took a vacation without telling us!",
+    "t3": "Our robot is just as confused as you are. Maybe it can help you find your way back?",
+    "t4": "Go Home"
+  },
+
+  "error": {
+    "t1": "Oops! Something went wrong",
+    "t3": "Our robot is just as confused as you are. Maybe it can help you find your way back?",
+    "t4": "Go Home"
+  }
+}

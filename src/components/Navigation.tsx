@@ -1,31 +1,36 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
+import { Link } from '@/i18n/routing'
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import SimpleThemeSwitcher from "@/components/SimpleThemeSwitcher"
 import ToggleThemeSwitcher from "@/components/ToggleThemeSwitcher"
+import { useLocale, useTranslations } from "next-intl"
+import LocaleSwitcher from "./LocaleSwitcher"
+
+interface NavigationLink {
+  label: string
+  href: string
+}
 
 interface NavigationData {
-  mainLinks: Array<{ label: string; href: string }>
-  githubLink: { label: string; href: string }
+  mainLinks: NavigationLink[]
+  githubLink: NavigationLink
 }
 
 // Main Navigation component
 // Manages the state for mobile menu and renders appropriate navigation elements
 export default function Navigation() {
+  const t = useTranslations('Navigation')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [navigationData, setNavigationData] = useState<NavigationData | null>(null)
+  //const [navigationData, setNavigationData] = useState<NavigationData | null>(null)
   const pathname = usePathname()
 
-  // Fetch navigation data
-  useEffect(() => {
-    fetch("/data/navigation.json")
-      .then((response) => response.json())
-      .then((data) => setNavigationData(data))
-      .catch((error) => console.error("Error fetching navigation data:", error))
-  }, [])
+  const navigationData: NavigationData = {
+    mainLinks: t.raw("mainLinks") as NavigationLink[],
+    githubLink: t.raw("githubLink") as NavigationLink,
+  }
 
   // Close mobile menu when route changes
   useEffect(() => {
@@ -48,18 +53,19 @@ export default function Navigation() {
           <Link href="/" className="text-2xl font-bold" onClick={closeMenu}>
             <h1>Amadeo Pavazza</h1>
           </Link>
-          <div className="hidden md:flex space-x-4 items-center">
+          <div className="hidden lg:flex space-x-4 items-center">
             {navigationData && (
               <>
                 <NavLinks currentPath={pathname} navigationData={navigationData} />
                 <GitHubLink navigationData={navigationData} />
+                <LocaleSwitcher />
                 <SimpleThemeSwitcher />
               </>
             )}
           </div>
 
           {/* Mobile menu toggle button */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="lg:hidden flex items-center space-x-2">
             <button className="p-2 rounded-md hover:bg-blue-800 dark:hover:bg-gray-800 transition-colors" onClick={toggleMenu}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -68,7 +74,7 @@ export default function Navigation() {
 
         {/* Mobile menu (conditionally rendered) */}
         {isMenuOpen && navigationData && (
-          <div className="md:hidden transition-all duration-200 ease-in-out max-h-screen opacity-100">
+          <div className="lg:hidden transition-all duration-200 ease-in-out max-h-screen opacity-100">
             <MobileMenu closeMenu={closeMenu} currentPath={pathname} navigationData={navigationData} />
           </div>
         )}
@@ -108,7 +114,10 @@ function NavLink({
   currentPath: string
   onClick?: () => void
 }) {
-  const isActive = currentPath === href
+  const locale = useLocale();
+
+  // Check if the current path matches the localized href
+  const isActive = currentPath === `/${locale}${href}` || (href === "/" && currentPath === `/${locale}`)
   return (
     <Link
       href={href}
@@ -152,7 +161,10 @@ function MobileMenu({
         <div className="border-t border-blue-400/30 dark:border-gray-700 my-2"></div>
         <div className="flex justify-between items-center">
           <GitHubLink navigationData={navigationData} />
-          <ToggleThemeSwitcher />
+          <div className="flex space-x-3">
+            <LocaleSwitcher />
+            <ToggleThemeSwitcher />
+          </div>
         </div>
       </div>
     </div>

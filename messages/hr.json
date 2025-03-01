@@ -1,0 +1,148 @@
+{
+  "Navigation": {
+    "mainLinks": [
+      {
+        "label": "Naslovnica",
+        "href": "/"
+      },
+      {
+        "label": "Projekti",
+        "href": "/projects"
+      },
+      {
+        "label": "O meni",
+        "href": "/about"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/contact"
+      }
+    ],
+    "githubLink": {
+      "label": "GitHub",
+      "href": "https://github.com/apavazza"
+    }
+  },
+
+  "Metadata": {
+    "projects": {
+      "title": "Projekti"
+    },
+    "about": {
+      "title": "O meni"
+    },
+    "contact": {
+      "title": "Kontakt"
+    }
+  },
+
+  "Hero": {
+    "tagline": "Softverski Developer",
+    "viewProjects": "Pogledaj projekte",
+    "contactMe": "Kontaktiraj me"
+  },
+
+  "StackTerminal": {
+    "whoami": "Student Računarstva"
+  },
+
+  "Projects": {
+    "title": "Projekti",
+    "tagline": "Zbirka projekata koji pokazuju moje vještine i iskustvo u izradi modernih aplikacija.",
+    "projectsList": [
+      {
+        "name": "Password Manager",
+        "description": "Upravitelj lozinkama za komandnu liniju",
+        "url": "https://github.com/apavazza/PasswordManager",
+        "tags": ["Kriptografija", "C++", "CLI"]
+      },
+      {
+        "name": "Linux Distros",
+        "description": "Analiza popularnosti Linux distribucija",
+        "url": "https://github.com/apavazza/linux-distros",
+        "tags": ["Podatkovna znanost", "Python"]
+      },
+      {
+        "name": "Tower Defense",
+        "description": "Igra tower defense",
+        "url": "https://github.com/apavazza/tower_defense",
+        "tags": ["Stencyl", "Igra"]
+      },
+      {
+        "name": "WriteWarp",
+        "description": "Servis za blogiranje",
+        "url": "https://github.com/apavazza/HCI",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Osobna web stranica",
+        "description": "Moja osobna web stranica",
+        "url": "https://github.com/apavazza/apavazza.github.io",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Employee Manager",
+        "description": "Electron aplikacija za upravljanje zaposlenicima",
+        "url": "https://github.com/apavazza/employee-manager",
+        "tags": ["Electron", "JavaScript"]
+      },
+      {
+        "name": "eCommerce",
+        "description": "eCommerce web aplikacija",
+        "url": "https://github.com/apavazza/ecommerce",
+        "tags": ["Docker", "PHP"]
+      }
+    ]  
+  },
+
+  "Bio": {
+    "title": "Tko sam ja?",
+    "text": "Student sam računarstva s velikim interesom za Linux, containerizaciju (Docker, Podman, Kubernetes) i programiranje (C, C++, Go, Python). Zanima me znanost o podacima, računalna sigurnost i razvoj web aplikacija (Next.js, React, Tailwind CSS). Također imam iskustva s Gitom, DevOpsom (GitHub Actions) i razvojem igara koristeći Stencyl. Uvijek sam u potrazi za novim prilikama za učenje i suočavanje s novim izazovima."
+  },
+
+  "Education": {
+    "title": "Obrazovanje",
+    "educationList": [
+      {
+          "year": "2024 - Trenutno",
+          "degree": "Sveučilišni magistar inženjer računarstva (univ. mag. ing. comp.)",
+          "institution": "Sveučilište u Splitu",
+          "faculty": "Fakultet elektrotehnike, strojarstva i brodogradnje"
+      },
+      {
+          "year": "2022 - 2024",
+          "degree": "Sveučilišni prvostupnik (baccalaureus) inženjer računarstva (univ. bacc. ing. comp)",
+          "institution": "Sveučilište u Splitu",
+          "faculty": "Fakultet elektrotehnike, strojarstva i brodogradnje"
+      },
+      {
+          "year": "2015 - 2019",
+          "degree": "Tehničar za računalstvo",
+          "institution": "Elektrotehnička škola Split",
+          "faculty": ""
+      }
+    ]
+  },
+
+  "ContactCard": {
+    "degree": "univ. bacc. ing. comp.",
+    "revealNotice": "Klikni za prikaz emaila"
+  },
+
+  "Footer": {
+    "notice": "Sva prava pridržana."
+  },
+
+  "not-found": {
+    "t1": "Ups! Stranica nije pronađena",
+    "t2": "Izgleda da je ova stranica otišla na odmor bez da nam kaže!",
+    "t3": "Naš robot je jednako zbunjen kao i vi. Možda vam može pomoći da pronađete put natrag?",
+    "t4": "Idi na početnu"
+  },
+
+  "error": {
+    "t1": "Ups! Nešto je pošlo po zlu",
+    "t3": "Naš robot je jednako zbunjen kao i vi. Možda vam može pomoći da pronađete put natrag?",
+    "t4": "Idi na početnu"
+  }
+}
