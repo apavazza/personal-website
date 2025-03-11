@@ -33,6 +33,9 @@
     },
     "contact": {
       "title": "Kontakt"
+    },
+    "privacy": {
+      "title": "Privatnost"
     }
   },
 
@@ -126,10 +129,26 @@
 
   "ContactCard": {
     "degree": "univ. bacc. ing. comp.",
-    "revealNotice": "Klikni za prikaz emaila"
+    "revealNotice": "Klikni za prikaz emaila",
+    "location": "Split, Hrvatska"
+  },
+
+  "Privacy": {
+    "title": "Obavijest o privatnosti",
+    "intro": "Ova web stranica ne prikuplja osobne podatke posjetitelja. Konkretno:",
+    "l1": "Ova web stranica ne koristi kolačiće (cookies)",
+    "l2": "Na web stranici nisu implementirani alati za analizu ili praćenje",
+    "l3": "Nema obrazaca za kontakt koji prikupljaju osobne podatke",
+    "l4": "Nema korisničkih računa ili sustava za autentifikaciju",
+    "titleHosting": "Informacije o hostingu",
+    "hostingText": "Ova web stranica je hostana na Vercelu, koji može prikupljati određene podatke u skladu sa svojim pravilima o privatnosti. Za više informacija, molimo pogledajte ",
+    "titleContact": "Kontakt",
+    "contactText": "Ako imate bilo kakvih pitanja u vezi s ovom obaviješću, slobodno se obratite na: ",
+    "contactPage": "Stranica za kontakt"
   },
 
   "Footer": {
+    "privacy": "Privatnost",
     "notice": "Sva prava pridržana."
   },
 

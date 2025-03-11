@@ -33,6 +33,9 @@
     },
     "contact": {
       "title": "Contact"
+    },
+    "privacy": {
+      "title": "Privacy"
     }
   },
 
@@ -126,10 +129,26 @@
 
   "ContactCard": {
     "degree": "B. Sc. Comp.",
-    "revealNotice": "Click to reveal email"
+    "revealNotice": "Click to reveal email",
+    "location": "Split, Croatia"
+  },
+
+  "Privacy": {
+    "title": "Privacy Notice",
+    "intro": "This website does not collect personal data from visitors. Specifically:",
+    "l1": "No cookies are used on this website",
+    "l2": "No analytics or tracking tools are implemented",
+    "l3": "No contact forms that collect personal information",
+    "l4": "No user accounts or authentication systems",
+    "titleHosting": "Hosting Information",
+    "hostingText": "This website is hosted on Vercel, which may collect certain data in accordance with their privacy practices. For more information, please refer to the ",
+    "titleContact": "Contact",
+    "contactText": "If you have any questions about this privacy notice, please reach out at: ",
+    "contactPage": "Contact page"
   },
 
   "Footer": {
+    "privacy": "Privacy",
     "notice": "All rights reserved."
   },
 

@@ -46,7 +46,7 @@ export default function ContactCard() {
         </div>
         <div className="flex items-center">
           <MapPin className="mr-4 text-gray-700 dark:text-gray-300" size={24} />
-          <p className="text-gray-700 dark:text-gray-300">Split, Croatia</p>
+          <p className="text-gray-700 dark:text-gray-300">{t('location')}</p>
         </div>
       </div>
     </div>
