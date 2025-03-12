@@ -80,7 +80,7 @@
       {
         "name": "Osobna web stranica",
         "description": "Moja osobna web stranica",
-        "url": "https://github.com/apavazza/apavazza.github.io",
+        "url": "https://github.com/apavazza/personal-website",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
@@ -144,7 +144,7 @@
     "hostingText": "Ova web stranica je hostana na Vercelu, koji može prikupljati određene podatke u skladu sa svojim pravilima o privatnosti. Za više informacija, molimo pogledajte ",
     "titleContact": "Kontakt",
     "contactText": "Ako imate bilo kakvih pitanja u vezi s ovom obaviješću, slobodno se obratite na: ",
-    "contactPage": "Stranica za kontakt"
+    "revealNotice": "Klikni za prikaz emaila"
   },
 
   "Footer": {

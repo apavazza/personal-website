@@ -80,7 +80,7 @@
       {
         "name": "Personal Website",
         "description": "My personal website",
-        "url": "https://github.com/apavazza/apavazza.github.io",
+        "url": "https://github.com/apavazza/personal-website",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
@@ -144,7 +144,7 @@
     "hostingText": "This website is hosted on Vercel, which may collect certain data in accordance with their privacy practices. For more information, please refer to the ",
     "titleContact": "Contact",
     "contactText": "If you have any questions about this privacy notice, please reach out at: ",
-    "contactPage": "Contact page"
+    "revealNotice": "Click to reveal email"
   },
 
   "Footer": {

@@ -1,8 +1,23 @@
-import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+"use client"
+
+import { useTranslations } from "next-intl"
+import { useState } from "react"
 
 export default function PrivacyNotice() {
   const t = useTranslations("Privacy")
+  const [emailRevealed, setEmailRevealed] = useState(false)
+
+  function getEmail() {
+    const email = ["webmaster", ".", "2q457", "@", "aleeas", ".", "com"]
+    return email.join("")
+  }
+
+  const handleEmailClick = () => {
+    if (!emailRevealed) {
+      setEmailRevealed(true)
+    }
+  }
+
   return (
     <div className="max-w-3xl mx-auto py-8 px-4">
       <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">{t('title')}</h2>
@@ -31,7 +46,22 @@ export default function PrivacyNotice() {
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-3">{t('titleContact')}</h3>
-        <p>{t('contactText')} <Link href={'/contact'} className="text-blue-600 hover:underline dark:text-blue-400">{t('contactPage')}</Link>.</p>
+        <p>{t('contactText')}</p>
+        {emailRevealed ? (
+            <a
+              href={`mailto:${getEmail()}`}
+              className="text-gray-700 no-underline hover:text-brand-primary dark:text-gray-300 dark:hover:text-gray-200"
+            >
+              {getEmail()}
+            </a>
+          ) : (
+            <button
+              onClick={handleEmailClick}
+              className="text-blue-600 underline dark:text-blue-400"
+            >
+              {t('revealNotice')}
+            </button>
+          )}
       </div>
     </div>
   )
