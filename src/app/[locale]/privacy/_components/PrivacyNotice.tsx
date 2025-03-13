@@ -45,8 +45,11 @@ export default function PrivacyNotice() {
           .
         </p>
 
+        <h3 className="text-xl font-semibold mt-6 mb-3">{t('titleExternalLinks')}</h3>
+        <p>{t('externalLinksText')}</p>
+
         <h3 className="text-xl font-semibold mt-6 mb-3">{t('titleContact')}</h3>
-        <p>{t('contactText')}</p>
+        <p>{t('contactText')}
         {emailRevealed ? (
             <a
               href={`mailto:${getEmail()}`}
@@ -62,6 +65,7 @@ export default function PrivacyNotice() {
               {t('revealNotice')}
             </button>
           )}
+        </p>
       </div>
     </div>
   )

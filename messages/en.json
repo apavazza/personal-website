@@ -142,6 +142,8 @@
     "l4": "No user accounts or authentication systems",
     "titleHosting": "Hosting Information",
     "hostingText": "This website is hosted on Vercel, which may collect certain data in accordance with their privacy practices. For more information, please refer to the ",
+    "titleExternalLinks": "External Links",
+    "externalLinksText": "This website may contain links to third-party websites that are not under our control. We are not responsible for their privacy practices or content. We recommend reviewing the privacy policies of any external sites you visit.",
     "titleContact": "Contact",
     "contactText": "If you have any questions about this privacy notice, please reach out at: ",
     "revealNotice": "Click to reveal email"
