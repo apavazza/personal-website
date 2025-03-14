@@ -1,6 +1,6 @@
 import type React from "react"
 import { notFound } from 'next/navigation'
-import { routing } from '@/i18n/routing'
+import { Locale, routing } from '@/i18n/routing'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}))
@@ -11,7 +11,7 @@ export default async function RootLayout({
   params
 }: {
   children: React.ReactNode
-  params: Promise<{ locale: string }>
+  params: Promise<{ locale: Locale }>
 }) {
   const { locale } = await params
   

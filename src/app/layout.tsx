@@ -5,9 +5,9 @@ import Navigation from "@/components/Navigation"
 import Footer from "@/components/Footer"
 import type React from "react"
 import { ThemeProvider } from "next-themes"
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { routing } from "@/i18n/routing"
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import { Locale, routing } from "@/i18n/routing"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -28,11 +28,11 @@ export default async function RootLayout({
   params
 }: {
   children: React.ReactNode
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: Locale }>
 }) {
   const { locale } = await params
-  const messages = await getMessages();
- 
+  const messages = await getMessages()
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${inter.className} flex flex-col min-h-screen bg-gray-100 dark:bg-black`}>

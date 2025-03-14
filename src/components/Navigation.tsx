@@ -67,7 +67,7 @@ export default function Navigation() {
           {/* Mobile menu toggle button */}
           <div className="lg:hidden flex items-center space-x-2">
             <button className="p-2 rounded-md hover:bg-blue-800 dark:hover:bg-gray-800 transition-colors" onClick={toggleMenu}>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={24} aria-label="Close Navigation Menu" /> : <Menu size={24} aria-label="Navigation Menu" />}
             </button>
           </div>
         </div>
