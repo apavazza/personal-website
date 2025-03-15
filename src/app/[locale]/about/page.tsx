@@ -1,10 +1,9 @@
+import { LocaleParams } from "@/i18n/routing"
 import Bio from "./_components/Bio"
 import EducationCard from "./_components/EducationCard"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
-type Params = Promise<{ locale: string }>
-
-export async function generateMetadata({ params }: { params: Params }) {
+export async function generateMetadata({ params }: { params: LocaleParams }) {
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations({locale, namespace: 'Metadata'});

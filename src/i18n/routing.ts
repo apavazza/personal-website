@@ -1,7 +1,8 @@
 import { defineRouting } from 'next-intl/routing'
 import { createNavigation } from 'next-intl/navigation'
 
-export type Locale = (typeof routing.locales)[number];
+export type Locale = (typeof routing.locales)[number]
+export type LocaleParams = Promise<{ locale: Locale }>
  
 export const routing = defineRouting({
   // A list of all locales that are supported
