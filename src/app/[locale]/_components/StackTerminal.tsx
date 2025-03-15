@@ -44,7 +44,7 @@ export default function StackTerminal() {
             {user}: {directory}
           </span>
         </div>
-        <div className="flex gap-2" aria-hidden="true">
+        <div className="flex gap-2">
           <div className="p-1 hover:bg-[#3daee9]/20 rounded">
             <Minus className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
@@ -60,20 +60,14 @@ export default function StackTerminal() {
       {/* Terminal content */}
       <div className="p-4 font-mono text-sm leading-6">
         <div className="space-y-1">
-          <div className="flex">
-            <span className="text-[#16a085] dark:text-[#16a085]">{user}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">:</span>
-            <span className="text-[#3daee9] dark:text-[#3daee9]">{directory}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">#</span>
+          <div className="flex min-w-max">
+            <Prompt user={user} directory={directory} />
             <span className="text-neutral-800 dark:text-neutral-200 ml-2">whoami</span>
           </div>
           <div className="text-neutral-600 dark:text-neutral-300 ml-4">{t('whoami')}</div>
 
-          <div className="flex">
-            <span className="text-[#16a085] dark:text-[#16a085]">{user}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">:</span>
-            <span className="text-[#3daee9] dark:text-[#3daee9]">{directory}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">#</span>
+          <div className="flex min-w-max">
+            <Prompt user={user} directory={directory} />
             <span className="text-neutral-800 dark:text-neutral-200 ml-2">ls -la</span>
           </div>
 
@@ -94,11 +88,8 @@ export default function StackTerminal() {
             </div>
           ))}
 
-          <div className="flex">
-            <span className="text-[#16a085] dark:text-[#16a085]">{user}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">:</span>
-            <span className="text-[#3daee9] dark:text-[#3daee9]">{directory}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">#</span>
+          <div className="flex min-w-max">
+            <Prompt user={user} directory={directory} />
             <span className="animate-pulse ml-2 text-neutral-800 dark:text-neutral-200">█</span>
           </div>
         </div>
@@ -112,7 +103,7 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode
 }
 
-export function Badge({ variant = "default", className = "", children, ...props }: BadgeProps) {
+function Badge({ variant = "default", className = "", children, ...props }: BadgeProps) {
   return (
     <span
       className={`
@@ -125,5 +116,16 @@ export function Badge({ variant = "default", className = "", children, ...props 
     >
       {children}
     </span>
+  )
+}
+
+function Prompt({user, directory}: {user: string, directory: string}) {
+  return(
+    <>
+      <span className="text-[#16a085] dark:text-[#16a085]">{user}</span>
+      <span className="text-neutral-800 dark:text-neutral-200">:</span>
+      <span className="text-[#3daee9] dark:text-[#3daee9]">{directory}</span>
+      <span className="text-neutral-800 dark:text-neutral-200">#</span>
+    </>
   )
 }
