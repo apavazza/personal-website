@@ -32,6 +32,7 @@ export default function LocaleSwitcher() {
       value={locale}
       className="bg-transparent disabled:text-gray-400"
       disabled={isPending}
+      aria-label="Select Language"
     >
       {locales.map((loc) => (
         <option
