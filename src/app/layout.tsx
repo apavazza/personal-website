@@ -6,7 +6,7 @@ import Footer from "@/components/Footer"
 import type React from "react"
 import { ThemeProvider } from "next-themes"
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
+import { getLocale, getMessages } from 'next-intl/server'
 import { Locale, routing } from "@/i18n/routing"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -24,13 +24,11 @@ export function generateStaticParams() {
 }
 
 export default async function RootLayout({
-  children,
-  params
+  children
 }: {
   children: React.ReactNode
-  params: Promise<{ locale: Locale }>
 }) {
-  const { locale } = await params
+  const locale = await getLocale() as Locale
   const messages = await getMessages()
 
   return (
