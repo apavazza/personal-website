@@ -44,16 +44,16 @@ export default function StackTerminal() {
             {user}: {directory}
           </span>
         </div>
-        <div className="flex gap-2">
-          <button className="p-1 hover:bg-[#3daee9]/20 rounded" aria-hidden="true">
+        <div className="flex gap-2" aria-hidden="true">
+          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
             <Minus className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
-          </button>
-          <button className="p-1 hover:bg-[#3daee9]/20 rounded" aria-hidden="true">
+          </div>
+          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
             <Square className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
-          </button>
-          <button className="p-1 hover:bg-[#3daee9]/20 rounded" aria-hidden="true">
+          </div>
+          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
             <X className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
-          </button>
+          </div>
         </div>
       </div>
 
