@@ -6,7 +6,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}))
 }
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params
 }: {
@@ -16,7 +16,7 @@ export default async function RootLayout({
   const { locale } = await params
   
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as "en" | "hr")) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 
