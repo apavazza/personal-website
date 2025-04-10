@@ -16,4 +16,4 @@ Welcome to the repository for my personal website. This site showcases my projec
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
 ## License
-This repository is licensed under the terms of the [GNU Affero General Public License](LICENSE).
+This repository is licensed under the terms of the [GNU Affero General Public License v3.0](LICENSE).
