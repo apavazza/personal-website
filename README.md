@@ -1,6 +1,6 @@
 # Amadeo Pavazza's Personal Website
 
- [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 
 Welcome to the repository for my personal website. This site showcases my projects, educational background, and contact information.
 
