@@ -54,10 +54,28 @@
     "tagline": "Zbirka projekata koji pokazuju moje vještine i iskustvo u izradi modernih aplikacija.",
     "projectsList": [
       {
+        "name": "Crypt",
+        "description": "Alat za enkripciju i dekripciju datoteka",
+        "url": "https://github.com/apavazza/crypt",
+        "tags": ["Kriptografija", "Rust", "CLI"]
+      },
+      {
         "name": "Password Manager",
         "description": "Upravitelj lozinkama za komandnu liniju",
         "url": "https://github.com/apavazza/PasswordManager",
         "tags": ["Kriptografija", "C++", "CLI"]
+      },
+      {
+        "name": "Simplex",
+        "description": "Rješavač Simplex metode",
+        "url": "https://github.com/apavazza/simplex",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Transportation",
+        "description": "Rješavač transportnog problema",
+        "url": "https://github.com/apavazza/transportation",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Linux Distros",
@@ -84,6 +102,12 @@
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
+        "name": "Remote Screen",
+        "description": "Siguran VNC pristup preko privremenog SSH tunela",
+        "url": "https://github.com/apavazza/remote-screen",
+        "tags": ["Shell", "VNC", "SSH"]
+      },
+      {
         "name": "Employee Manager",
         "description": "Electron aplikacija za upravljanje zaposlenicima",
         "url": "https://github.com/apavazza/employee-manager",
@@ -95,7 +119,7 @@
         "url": "https://github.com/apavazza/ecommerce",
         "tags": ["Docker", "PHP"]
       }
-    ]  
+    ]
   },
 
   "Bio": {
@@ -107,7 +131,7 @@
     "title": "Obrazovanje",
     "educationList": [
       {
-          "year": "2024 - Trenutno",
+          "year": "2024 - Trenutno (u tijeku)",
           "degree": "Sveučilišni magistar inženjer računarstva (univ. mag. ing. comp.)",
           "institution": "Sveučilište u Splitu",
           "faculty": "Fakultet elektrotehnike, strojarstva i brodogradnje"

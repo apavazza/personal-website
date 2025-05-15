@@ -18,8 +18,8 @@ export default function StackTerminal() {
   })
 
   const technologies = [
-    { category: "Systems Programming", items: ["C", "C++", "Go"] },
-    { category: "Scripting Languages", items: ["Python", "JavaScript", "TypeScript"] },
+    { category: "Systems Programming", items: ["Rust", "C", "C++", "Go"] },
+    { category: "Scripting Languages", items: ["Python", "JavaScript", "TypeScript", "Shell"] },
     { category: "Infrastructure", items: ["Linux", "SELinux"] },
     { category: "Linux Distros", items: ["Fedora", "CentOS", "Red Hat", "openSUSE"] },
     { category: "Frontend Development", items: ["Next.js", "React", "TailwindCSS"] },

@@ -54,10 +54,28 @@
     "tagline": "A collection of projects that showcase my skills and experience in building modern applications.",
     "projectsList": [
       {
+        "name": "Crypt",
+        "description": "A file encryption and decryption tool",
+        "url": "https://github.com/apavazza/crypt",
+        "tags": ["Cryptography", "Rust", "CLI"]
+      },
+      {
         "name": "Password Manager",
         "description": "A command line password manager",
         "url": "https://github.com/apavazza/PasswordManager",
         "tags": ["Cryptography", "C++", "CLI"]
+      },
+      {
+        "name": "Simplex",
+        "description": "Simplex Method Solver",
+        "url": "https://github.com/apavazza/simplex",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Transportation",
+        "description": "Transportation Problem Solver",
+        "url": "https://github.com/apavazza/transportation",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Linux Distros",
@@ -84,6 +102,12 @@
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
+        "name": "Remote Screen",
+        "description": "Secure VNC Access via Temporary SSH Tunnel",
+        "url": "https://github.com/apavazza/remote-screen",
+        "tags": ["Shell", "VNC", "SSH"]
+      },
+      {
         "name": "Employee Manager",
         "description": "An electron application for managing employees",
         "url": "https://github.com/apavazza/employee-manager",
@@ -95,7 +119,7 @@
         "url": "https://github.com/apavazza/ecommerce",
         "tags": ["Docker", "PHP"]
       }
-    ]  
+    ]
   },
 
   "Bio": {
@@ -107,7 +131,7 @@
     "title": "Education",
     "educationList": [
       {
-          "year": "2024 - Present",
+          "year": "2024 - Present (in progress)",
           "degree": "Master of Science in Computing (M. Sc. Comp.)",
           "institution": "University of Split",
           "faculty": "Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture"
