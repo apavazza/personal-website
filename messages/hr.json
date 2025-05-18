@@ -90,6 +90,12 @@
         "tags": ["Stencyl", "Igra"]
       },
       {
+        "name": "Lisp Interpreter",
+        "description": "Jednostavan web-bazirani Lisp interpreter",
+        "url": "https://github.com/apavazza/lisp-interpreter",
+        "tags": ["Lisp", "Interpreter", "Next.js", "React"]
+      },
+      {
         "name": "WriteWarp",
         "description": "Servis za blogiranje",
         "url": "https://github.com/apavazza/HCI",
