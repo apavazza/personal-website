@@ -175,7 +175,8 @@
 
   "Footer": {
     "privacy": "Privacy",
-    "notice": "All rights reserved."
+    "notice": "All rights reserved.",
+    "version": "Version"
   },
 
   "not-found": {

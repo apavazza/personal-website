@@ -175,7 +175,8 @@
 
   "Footer": {
     "privacy": "Privatnost",
-    "notice": "Sva prava pridržana."
+    "notice": "Sva prava pridržana.",
+    "version": "Verzija"
   },
 
   "not-found": {
