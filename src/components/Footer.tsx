@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="flex flex-row space-x-5 items-center">
               <Link
                 href={"/privacy"}
-                className="text-sm text-gray-200 hover:text-gray-300 lg:absolute lg:left-4"
+                className="text-sm text-gray-200 hover:text-gray-300"
               >
                 {t("privacy")}
               </Link>
