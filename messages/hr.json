@@ -78,6 +78,24 @@
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
+        "name": "Assembly Interpreter",
+        "description": "Interaktivni asemblerski interpreter",
+        "url": "https://github.com/apavazza/asm-interpreter",
+        "tags": ["Assembly", "Interpreter", "Rust"]
+      },
+      {
+        "name": "BF Interpreter",
+        "description": "Interpreter za BF programski jezik",
+        "url": "https://github.com/apavazza/bf-interpreter",
+        "tags": ["BF", "Interpreter", "Rust"]
+      },
+      {
+        "name": "Lisp Interpreter",
+        "description": "Jednostavan web-bazirani Lisp interpreter",
+        "url": "https://github.com/apavazza/lisp-interpreter",
+        "tags": ["Lisp", "Interpreter", "Next.js", "React"]
+      },
+      {
         "name": "Linux Distros",
         "description": "Analiza popularnosti Linux distribucija",
         "url": "https://github.com/apavazza/linux-distros",
@@ -88,12 +106,6 @@
         "description": "Igra tower defense",
         "url": "https://github.com/apavazza/tower_defense",
         "tags": ["Stencyl", "Igra"]
-      },
-      {
-        "name": "Lisp Interpreter",
-        "description": "Jednostavan web-bazirani Lisp interpreter",
-        "url": "https://github.com/apavazza/lisp-interpreter",
-        "tags": ["Lisp", "Interpreter", "Next.js", "React"]
       },
       {
         "name": "WriteWarp",

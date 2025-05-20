@@ -78,6 +78,24 @@
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
+        "name": "Assembly Interpreter",
+        "description": "Interactive assembly interpreter",
+        "url": "https://github.com/apavazza/asm-interpreter",
+        "tags": ["Assembly", "Interpreter", "Rust"]
+      },
+      {
+        "name": "BF Interpreter",
+        "description": "Interpreter for the BF programming language",
+        "url": "https://github.com/apavazza/bf-interpreter",
+        "tags": ["BF", "Interpreter", "Rust"]
+      },
+      {
+        "name": "Lisp Interpreter",
+        "description": "A simple web-based Lisp interpreter",
+        "url": "https://github.com/apavazza/lisp-interpreter",
+        "tags": ["Lisp", "Interpreter", "Next.js", "React"]
+      },
+      {
         "name": "Linux Distros",
         "description": "Popularity analysis of Linux distributions",
         "url": "https://github.com/apavazza/linux-distros",
@@ -88,12 +106,6 @@
         "description": "A tower defense game",
         "url": "https://github.com/apavazza/tower_defense",
         "tags": ["Stencyl", "Game"]
-      },
-      {
-        "name": "Lisp Interpreter",
-        "description": "A simple web-based Lisp interpreter",
-        "url": "https://github.com/apavazza/lisp-interpreter",
-        "tags": ["Lisp", "Interpreter", "Next.js", "React"]
       },
       {
         "name": "WriteWarp",
