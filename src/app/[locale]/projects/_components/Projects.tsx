@@ -3,14 +3,7 @@
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import ProjectCard from "./ProjectCard"
-
-interface Project {
-  name: string
-  description: string
-  url: string
-  icon: string
-  tags: string[]
-}
+import type { Project } from "../types"
 
 export default function Projects() {
   const t = useTranslations("Projects")

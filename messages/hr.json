@@ -52,89 +52,96 @@
   "Projects": {
     "title": "Projekti",
     "tagline": "Zbirka projekata koji pokazuju moje vještine i iskustvo u izradi modernih aplikacija.",
+    "repository": "Repozitorij",
+    "webApp": "Web aplikacija",
     "projectsList": [
       {
         "name": "Crypt",
         "description": "Alat za enkripciju i dekripciju datoteka",
-        "url": "https://github.com/apavazza/crypt",
+        "repositoryUrl": "https://github.com/apavazza/crypt",
         "tags": ["Kriptografija", "Rust", "CLI"]
       },
       {
         "name": "Password Manager",
         "description": "Upravitelj lozinkama za komandnu liniju",
-        "url": "https://github.com/apavazza/PasswordManager",
+        "repositoryUrl": "https://github.com/apavazza/PasswordManager",
         "tags": ["Kriptografija", "C++", "CLI"]
       },
       {
         "name": "Simplex",
         "description": "Rješavač Simplex metode",
-        "url": "https://github.com/apavazza/simplex",
+        "repositoryUrl": "https://github.com/apavazza/simplex",
+        "webAppUrl": "https://simplex.amadeopavazza.from.hr",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Transportation",
         "description": "Rješavač transportnog problema",
-        "url": "https://github.com/apavazza/transportation",
+        "repositoryUrl": "https://github.com/apavazza/transportation",
+        "webAppUrl": "https://transportation.amadeopavazza.from.hr",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Assembly Interpreter",
         "description": "Interaktivni asemblerski interpreter",
-        "url": "https://github.com/apavazza/asm-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/asm-interpreter",
         "tags": ["Assembly", "Interpreter", "Rust"]
       },
       {
         "name": "BF Interpreter",
         "description": "Interpreter za BF programski jezik",
-        "url": "https://github.com/apavazza/bf-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/bf-interpreter",
         "tags": ["BF", "Interpreter", "Rust"]
       },
       {
         "name": "Lisp Interpreter",
         "description": "Jednostavan web-bazirani Lisp interpreter",
-        "url": "https://github.com/apavazza/lisp-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/lisp-interpreter",
+        "webAppUrl": "https://lisp.amadeopavazza.from.hr",
         "tags": ["Lisp", "Interpreter", "Next.js", "React"]
       },
       {
         "name": "Linux Distros",
         "description": "Analiza popularnosti Linux distribucija",
-        "url": "https://github.com/apavazza/linux-distros",
+        "repositoryUrl": "https://github.com/apavazza/linux-distros",
         "tags": ["Podatkovna znanost", "Python"]
       },
       {
         "name": "Tower Defense",
         "description": "Igra tower defense",
-        "url": "https://github.com/apavazza/tower_defense",
+        "repositoryUrl": "https://github.com/apavazza/tower_defense",
+        "webAppUrl": "https://apavazza.github.io/tower_defense/play/",
         "tags": ["Stencyl", "Igra"]
       },
       {
         "name": "WriteWarp",
         "description": "Servis za blogiranje",
-        "url": "https://github.com/apavazza/HCI",
+        "repositoryUrl": "https://github.com/apavazza/HCI",
+        "webAppUrl": "https://writewarp.vercel.app/",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Osobna web stranica",
         "description": "Moja osobna web stranica",
-        "url": "https://github.com/apavazza/personal-website",
+        "repositoryUrl": "https://github.com/apavazza/personal-website",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Remote Screen",
         "description": "Siguran VNC pristup preko privremenog SSH tunela",
-        "url": "https://github.com/apavazza/remote-screen",
+        "repositoryUrl": "https://github.com/apavazza/remote-screen",
         "tags": ["Shell", "VNC", "SSH"]
       },
       {
         "name": "Employee Manager",
         "description": "Electron aplikacija za upravljanje zaposlenicima",
-        "url": "https://github.com/apavazza/employee-manager",
+        "repositoryUrl": "https://github.com/apavazza/employee-manager",
         "tags": ["Electron", "JavaScript"]
       },
       {
         "name": "eCommerce",
         "description": "eCommerce web aplikacija",
-        "url": "https://github.com/apavazza/ecommerce",
+        "repositoryUrl": "https://github.com/apavazza/ecommerce",
         "tags": ["Docker", "PHP"]
       }
     ]

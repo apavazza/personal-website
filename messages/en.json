@@ -52,89 +52,96 @@
   "Projects": {
     "title": "Projects",
     "tagline": "A collection of projects that showcase my skills and experience in building modern applications.",
+    "repository": "Repository",
+    "webApp": "Web App",
     "projectsList": [
       {
         "name": "Crypt",
         "description": "A file encryption and decryption tool",
-        "url": "https://github.com/apavazza/crypt",
+        "repositoryUrl": "https://github.com/apavazza/crypt",
         "tags": ["Cryptography", "Rust", "CLI"]
       },
       {
         "name": "Password Manager",
         "description": "A command line password manager",
-        "url": "https://github.com/apavazza/PasswordManager",
+        "repositoryUrl": "https://github.com/apavazza/PasswordManager",
         "tags": ["Cryptography", "C++", "CLI"]
       },
       {
         "name": "Simplex",
         "description": "Simplex Method Solver",
-        "url": "https://github.com/apavazza/simplex",
+        "repositoryUrl": "https://github.com/apavazza/simplex",
+        "webAppUrl": "https://simplex.amadeopavazza.from.hr",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Transportation",
         "description": "Transportation Problem Solver",
-        "url": "https://github.com/apavazza/transportation",
+        "repositoryUrl": "https://github.com/apavazza/transportation",
+        "webAppUrl": "https://transportation.amadeopavazza.from.hr",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Assembly Interpreter",
         "description": "Interactive assembly interpreter",
-        "url": "https://github.com/apavazza/asm-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/asm-interpreter",
         "tags": ["Assembly", "Interpreter", "Rust"]
       },
       {
         "name": "BF Interpreter",
         "description": "Interpreter for the BF programming language",
-        "url": "https://github.com/apavazza/bf-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/bf-interpreter",
         "tags": ["BF", "Interpreter", "Rust"]
       },
       {
         "name": "Lisp Interpreter",
         "description": "A simple web-based Lisp interpreter",
-        "url": "https://github.com/apavazza/lisp-interpreter",
+        "repositoryUrl": "https://github.com/apavazza/lisp-interpreter",
+        "webAppUrl": "https://lisp.amadeopavazza.from.hr",
         "tags": ["Lisp", "Interpreter", "Next.js", "React"]
       },
       {
         "name": "Linux Distros",
         "description": "Popularity analysis of Linux distributions",
-        "url": "https://github.com/apavazza/linux-distros",
+        "repositoryUrl": "https://github.com/apavazza/linux-distros",
         "tags": ["Data Science", "Python"]
       },
       {
         "name": "Tower Defense",
         "description": "A tower defense game",
-        "url": "https://github.com/apavazza/tower_defense",
+        "repositoryUrl": "https://github.com/apavazza/tower_defense",
+        "webAppUrl": "https://apavazza.github.io/tower_defense/play/",
         "tags": ["Stencyl", "Game"]
       },
       {
         "name": "WriteWarp",
         "description": "A blogging service",
-        "url": "https://github.com/apavazza/HCI",
+        "repositoryUrl": "https://github.com/apavazza/HCI",
+        "webAppUrl": "https://writewarp.vercel.app/",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Personal Website",
         "description": "My personal website",
-        "url": "https://github.com/apavazza/personal-website",
+        "repositoryUrl": "https://github.com/apavazza/personal-website",
         "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
       },
       {
         "name": "Remote Screen",
         "description": "Secure VNC Access via Temporary SSH Tunnel",
-        "url": "https://github.com/apavazza/remote-screen",
+        "repositoryUrl": "https://github.com/apavazza/remote-screen",
         "tags": ["Shell", "VNC", "SSH"]
       },
       {
         "name": "Employee Manager",
         "description": "An electron application for managing employees",
-        "url": "https://github.com/apavazza/employee-manager",
+        "repositoryUrl": "https://github.com/apavazza/employee-manager",
         "tags": ["Electron", "JavaScript"]
       },
       {
         "name": "eCommerce",
         "description": "An eCommerce webapp",
-        "url": "https://github.com/apavazza/ecommerce",
+        "repositoryUrl": "https://github.com/apavazza/ecommerce",
         "tags": ["Docker", "PHP"]
       }
     ]
