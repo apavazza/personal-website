@@ -149,7 +149,7 @@
 
   "Bio": {
     "title": "Tko sam ja?",
-    "text": "Student sam računarstva s velikim interesom za Linux, containerizaciju (Docker, Podman, Kubernetes) i programiranje (C, C++, Go, Python). Zanima me znanost o podacima, računalna sigurnost i razvoj web aplikacija (Next.js, React, Tailwind CSS). Također imam iskustva s Gitom, DevOpsom (GitHub Actions) i razvojem igara koristeći Stencyl. Uvijek sam u potrazi za novim prilikama za učenje i suočavanje s novim izazovima."
+    "text": "Student sam računarstva s velikim interesom za Linux, containerizaciju (Docker, Podman, Kubernetes) i programiranje (C, C++, Rust, Python, Go). Zanima me znanost o podacima, računalna sigurnost i razvoj web aplikacija (Next.js, React, Tailwind CSS). Također imam iskustva s Gitom, DevOpsom (GitHub Actions) i razvojem igara koristeći Stencyl. Uvijek sam u potrazi za novim prilikama za učenje i suočavanje s novim izazovima."
   },
 
   "Education": {

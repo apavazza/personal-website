@@ -149,7 +149,7 @@
 
   "Bio": {
     "title": "Who Am I?",
-    "text": "I'm a computer science student with a strong interest in Linux, containerization (Docker, Podman, Kubernetes), and programming (C, C++, Go, Python). I'm passionate about data science, computer security, and web development (Next.js, React, Tailwind CSS). I also have experience with Git, DevOps (GitHub Actions), and game development using Stencyl. I'm always looking to learn more and take on new challenges."
+    "text": "I'm a computer science student with a strong interest in Linux, containerization (Docker, Podman, Kubernetes), and programming (C, C++, Rust, Python, Go). I'm passionate about data science, computer security, and web development (Next.js, React, Tailwind CSS). I also have experience with Git, DevOps (GitHub Actions), and game development using Stencyl. I'm always looking to learn more and take on new challenges."
   },
 
   "Education": {

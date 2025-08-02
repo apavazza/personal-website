@@ -16,7 +16,18 @@ export const metadata: Metadata = {
     default: "Amadeo Pavazza",
     template: "%s | Amadeo Pavazza",
   },
-  description: "Portfolio website of Amadeo Pavazza",
+  description: "Personal website of Amadeo Pavazza, a computer science student interested in Linux, containerization, programming in C, C++, Rust, Python and Go, as well as data science, computer security, web development, DevOps, Git, and game development.",
+  keywords: [
+    "Amadeo Pavazza",
+    "Amadeo",
+    "Pavazza",
+    "personal",
+    "portfolio",
+    "engineer",
+    "software developer",
+    "computer science",
+    "programmer",
+  ],
 }
 
 export function generateStaticParams() {
