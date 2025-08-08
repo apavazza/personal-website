@@ -14,6 +14,18 @@ export default {
         'brand-primary': "var(--brand-primary)",
         'brand-secondary': "var(--brand-secondary)",
         'brand-tertiary': "var(--brand-tertiary)",
+        stackBlue: {
+          DEFAULT: '#0033a0',
+          dark: '#5ab6ff',
+        },
+        stackGreen: {
+          DEFAULT: '#006400',
+          dark: '#37ff8b',
+        },
+        stackBg: {
+          DEFAULT: '#fcfcfc',
+          dark: '#232627',
+        },
       },
     },
   },

@@ -31,12 +31,12 @@ export default function StackTerminal() {
   ]
 
   return (
-    <div className="max-w-3xl mx-auto mb-6 overflow-hidden rounded-lg border border-[#3daee9] dark:border-[#3daee9] bg-[#fcfcfc] dark:bg-[#232627]">
+    <div className="max-w-3xl mx-auto mb-6 overflow-hidden rounded-lg border border-stackBlue dark:border-stackBlue-dark bg-stackBg dark:bg-stackBg-dark">
       {/* Title bar */}
-      <div className="flex items-center h-8 px-3 bg-[#e3e5e7] dark:bg-[#31363b] border-b border-[#3daee9]">
+      <div className="flex items-center h-8 px-3 bg-[#e3e5e7] dark:bg-[#31363b] border-b border-stackBlue dark:border-stackBlue-dark">
         <div className="flex-1 flex items-center">
           <div className="w-4 h-4 mr-2">
-            <svg viewBox="0 0 16 16" className="fill-current text-[#3daee9]">
+            <svg viewBox="0 0 16 16" className="fill-stackBlue dark:fill-stackBlue-dark">
               <path d="M2.667 2.667v10.666h10.666V2.667H2.667zm1.333 2h8v7.333h-8V4.667z" />
             </svg>
           </div>
@@ -45,13 +45,13 @@ export default function StackTerminal() {
           </span>
         </div>
         <div className="flex gap-2">
-          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
+          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
             <Minus className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
-          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
+          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
             <Square className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
-          <div className="p-1 hover:bg-[#3daee9]/20 rounded">
+          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
             <X className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function StackTerminal() {
             <Prompt user={user} directory={directory} />
             <span className="text-neutral-800 dark:text-neutral-200 ml-2">whoami</span>
           </div>
-          <div className="text-neutral-600 dark:text-neutral-300 ml-4">{t('whoami')}</div>
+          <div className="text-neutral-700 dark:text-neutral-300 ml-4">{t('whoami')}</div>
 
           <div className="flex min-w-max">
             <Prompt user={user} directory={directory} />
@@ -73,13 +73,13 @@ export default function StackTerminal() {
 
           {technologies.slice(0, visible).map((tech, index) => (
             <div key={index} className="ml-4">
-              <span className="text-[#2980b9] dark:text-[#2980b9]">{tech.category}/</span>
+              <span className="text-stackBlue dark:text-stackBlue-dark">{tech.category}/</span>
               <div className="ml-8 flex flex-wrap gap-2">
                 {tech.items.map((item) => (
                   <Badge
                     key={item}
                     variant="outline"
-                    className="border-[#3daee9] text-neutral-800 dark:text-neutral-300"
+                    className="border-stackBlue dark:border-stackBlue-dark text-neutral-800 dark:text-neutral-300"
                   >
                     {item}
                   </Badge>
@@ -122,9 +122,9 @@ function Badge({ variant = "default", className = "", children, ...props }: Badg
 function Prompt({user, directory}: {user: string, directory: string}) {
   return(
     <>
-      <span className="text-[#16a085] dark:text-[#16a085]">{user}</span>
+      <span className="text-stackGreen dark:text-stackGreen-dark">{user}</span>
       <span className="text-neutral-800 dark:text-neutral-200">:</span>
-      <span className="text-[#3daee9] dark:text-[#3daee9]">{directory}</span>
+      <span className="text-stackBlue dark:text-stackBlue-dark">{directory}</span>
       <span className="text-neutral-800 dark:text-neutral-200">#</span>
     </>
   )
