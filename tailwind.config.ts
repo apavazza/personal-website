@@ -16,7 +16,7 @@ export default {
         'brand-tertiary': "var(--brand-tertiary)",
         stackBlue: {
           DEFAULT: '#0033a0',
-          dark: '#5ab6ff',
+          dark: '#7cc4ff',
         },
         stackGreen: {
           DEFAULT: '#006400',
