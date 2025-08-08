@@ -48,7 +48,7 @@ export default function Navigation() {
       {isMenuOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-10" onClick={closeMenu}></div>}
 
       {/* Main navigation bar */}
-      <nav className="bg-blue-950 dark:bg-black text-gray-100 p-4 sticky top-0 z-20">
+      <nav className="bg-blue-950 dark:bg-black text-white p-4 sticky top-0 z-20">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold" onClick={closeMenu}>
             <h1>Amadeo Pavazza</h1>
@@ -121,8 +121,10 @@ function NavLink({
   return (
     <Link
       href={href}
-      className={`px-4 py-2 rounded-md transition-colors ${
-        isActive ? "bg-blue-700 dark:bg-gray-200 dark:text-gray-800" : "hover:bg-blue-800 dark:hover:text-gray-900 dark:hover:bg-gray-300"
+      className={`px-4 py-2 rounded-md transition-colors font-bold ${
+        isActive
+          ? "bg-white text-blue-900 dark:text-gray-800"
+          : "text-gray-100 hover:text-white hover:bg-blue-800 dark:hover:bg-gray-700"
       }`}
       onClick={onClick}
     >
@@ -140,7 +142,9 @@ function GitHubLink({ navigationData }: { navigationData: NavigationData }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 w-min rounded transition-colors"
+      className="rounded border px-4 py-2 font-bold transition-colors text-gray-200
+        border-gray-200 hover:bg-gray-200 hover:text-blue-950
+        dark:border-gray-400 dark:hover:bg-gray-300 dark:hover:text-gray-900"
     >
       {label}
     </Link>
