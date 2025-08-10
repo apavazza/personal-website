@@ -25,7 +25,7 @@ export default function PrivacyNotice() {
       <div className="prose dark:prose-invert">
         <p>{t('intro')}</p>
 
-        <ul className="list-disc pl-5 my-4">
+        <ul className="list-disc my-4">
           <li>{t('l1')}</li>
           <li>{t('l2')}</li>
           <li>{t('l3')}</li>

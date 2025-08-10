@@ -27,7 +27,7 @@ export default function EducationCard() {
       <div className="max-w-3xl mx-auto px-4">
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500" />
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-linear-to-b from-blue-500 via-purple-500 to-pink-500" />
 
           {/* Education items */}
           <div className="space-y-16">
@@ -45,7 +45,7 @@ export default function EducationCard() {
 
                 {/* Content */}
                 <div className="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-lg">
-                  <div className="absolute left-0 top-8 w-[calc(2rem+1px)] h-px bg-gradient-to-r from-blue-500 to-purple-500" />
+                  <div className="absolute left-0 top-8 w-[calc(2rem+1px)] h-px bg-linear-to-r from-blue-500 to-purple-500" />
 
                   <div className="space-y-4">
                     {/* Year tag */}

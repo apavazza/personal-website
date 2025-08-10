@@ -37,7 +37,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
       />
       
       {/* Left Column: Project Info & Tags */}
-      <div className="flex-grow flex flex-col justify-between xl:w-2/3">
+      <div className="grow flex flex-col justify-between xl:w-2/3">
         <div>
           <h3 className="text-2xl font-semibold text-neutral-900 dark:text-white">{project.name}</h3>
           <p className="mt-3 text-neutral-600 dark:text-neutral-400 text-sm">{project.description}</p>

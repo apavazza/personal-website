@@ -31,12 +31,12 @@ export default function StackTerminal() {
   ]
 
   return (
-    <div className="max-w-3xl mx-auto mb-6 overflow-hidden rounded-lg border border-stackBlue dark:border-stackBlue-dark bg-stackBg dark:bg-stackBg-dark">
+    <div className="max-w-3xl mx-auto mb-6 overflow-hidden rounded-lg border border-stack-blue dark:border-stack-blue-dark bg-stack-bg dark:bg-stack-bg-dark">
       {/* Title bar */}
-      <div className="flex items-center h-8 px-3 bg-[#e3e5e7] dark:bg-[#31363b] border-b border-stackBlue dark:border-stackBlue-dark">
+      <div className="flex items-center h-8 px-3 bg-[#e3e5e7] dark:bg-[#31363b] border-b border-stack-blue dark:border-stack-blue-dark">
         <div className="flex-1 flex items-center">
           <div className="w-4 h-4 mr-2">
-            <svg viewBox="0 0 16 16" className="fill-stackBlue dark:fill-stackBlue-dark">
+            <svg viewBox="0 0 16 16" className="fill-stack-blue dark:fill-stack-blue-dark">
               <path d="M2.667 2.667v10.666h10.666V2.667H2.667zm1.333 2h8v7.333h-8V4.667z" />
             </svg>
           </div>
@@ -45,13 +45,13 @@ export default function StackTerminal() {
           </span>
         </div>
         <div className="flex gap-2">
-          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
+          <div className="p-1 hover:bg-stack-blue/20 dark:hover:bg-stack-blue-dark/20 rounded-sm">
             <Minus className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
-          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
+          <div className="p-1 hover:bg-stack-blue/20 dark:hover:bg-stack-blue-dark/20 rounded-sm">
             <Square className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
-          <div className="p-1 hover:bg-stackBlue/20 dark:hover:bg-stackBlue-dark/20 rounded">
+          <div className="p-1 hover:bg-stack-blue/20 dark:hover:bg-stack-blue-dark/20 rounded-sm">
             <X className="w-3 h-3 text-neutral-800 dark:text-neutral-200" />
           </div>
         </div>
@@ -73,13 +73,13 @@ export default function StackTerminal() {
 
           {technologies.slice(0, visible).map((tech, index) => (
             <div key={index} className="ml-4">
-              <span className="text-stackBlue dark:text-stackBlue-dark">{tech.category}/</span>
+              <span className="text-stack-blue dark:text-stack-blue-dark">{tech.category}/</span>
               <div className="ml-8 flex flex-wrap gap-2">
                 {tech.items.map((item) => (
                   <Badge
                     key={item}
-                    variant="outline"
-                    className="border-stackBlue dark:border-stackBlue-dark text-neutral-800 dark:text-neutral-300"
+                    variant="outline-solid"
+                    className="border-stack-blue dark:border-stack-blue-dark text-neutral-800 dark:text-neutral-300"
                   >
                     {item}
                   </Badge>
@@ -99,7 +99,7 @@ export default function StackTerminal() {
 }
 
 interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
-  variant?: "default" | "outline"
+  variant?: "default" | "outline-solid"
   children: React.ReactNode
 }
 
@@ -109,7 +109,7 @@ function Badge({ variant = "default", className = "", children, ...props }: Badg
       className={`
         inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
         transition-colors
-        ${variant === "outline" ? "border border-primary text-primary" : "bg-primary text-primary-foreground"}
+        ${variant === "outline-solid" ? "border border-primary text-primary" : "bg-primary text-primary-foreground"}
         ${className}
       `}
       {...props}
@@ -122,9 +122,9 @@ function Badge({ variant = "default", className = "", children, ...props }: Badg
 function Prompt({user, directory}: {user: string, directory: string}) {
   return(
     <>
-      <span className="text-stackGreen dark:text-stackGreen-dark">{user}</span>
+      <span className="text-stack-green dark:text-stack-green-dark">{user}</span>
       <span className="text-neutral-800 dark:text-neutral-200">:</span>
-      <span className="text-stackBlue dark:text-stackBlue-dark">{directory}</span>
+      <span className="text-stack-blue dark:text-stack-blue-dark">{directory}</span>
       <span className="text-neutral-800 dark:text-neutral-200">#</span>
     </>
   )

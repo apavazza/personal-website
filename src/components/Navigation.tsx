@@ -45,7 +45,7 @@ export default function Navigation() {
   return (
     <>
       {/* Overlay for mobile menu (displayed when menu is open) */}
-      {isMenuOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-10" onClick={closeMenu}></div>}
+      {isMenuOpen && <div className="fixed inset-0 bg-black/50 z-10" onClick={closeMenu}></div>}
 
       {/* Main navigation bar */}
       <nav className="bg-blue-950 dark:bg-black text-white p-4 sticky top-0 z-20">
@@ -53,7 +53,7 @@ export default function Navigation() {
           <Link href="/" className="text-2xl font-bold" onClick={closeMenu}>
             <h1>Amadeo Pavazza</h1>
           </Link>
-          <div className="hidden lg:flex space-x-4 items-center">
+          <div className="hidden lg:flex gap-x-4 items-center">
             {navigationData && (
               <>
                 <NavLinks currentPath={pathname} navigationData={navigationData} />
@@ -65,7 +65,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu toggle button */}
-          <div className="lg:hidden flex items-center space-x-2">
+          <div className="lg:hidden flex items-center gap-x-2">
             <button className="p-2 rounded-md hover:bg-blue-800 dark:hover:bg-gray-800 transition-colors" onClick={toggleMenu}>
               {isMenuOpen ? <X size={24} aria-label="Close Navigation Menu" /> : <Menu size={24} aria-label="Navigation Menu" />}
             </button>
@@ -142,7 +142,7 @@ function GitHubLink({ navigationData }: { navigationData: NavigationData }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="rounded border px-4 py-2 font-bold transition-colors text-gray-200
+      className="rounded-sm border px-4 py-2 font-bold transition-colors text-gray-200
         border-gray-200 hover:bg-gray-200 hover:text-blue-950
         dark:border-gray-400 dark:hover:bg-gray-300 dark:hover:text-gray-900"
     >
@@ -160,12 +160,12 @@ function MobileMenu({
 }: { closeMenu: () => void; currentPath: string; navigationData: NavigationData }) {
   return (
     <div className="bg-blue-950 dark:bg-black p-4 rounded-b-md absolute top-full left-0 right-0 z-20">
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col gap-y-4">
         <NavLinks closeMenu={closeMenu} currentPath={currentPath} navigationData={navigationData} />
-        <div className="border-t border-blue-400/30 dark:border-gray-700 my-2"></div>
+        <div className="border-t border-blue-400/30 dark:border-gray-700"></div>
         <div className="flex justify-between items-center">
           <GitHubLink navigationData={navigationData} />
-          <div className="flex space-x-3">
+          <div className="flex gap-x-3">
             <LocaleSwitcher />
             <ToggleThemeSwitcher />
           </div>

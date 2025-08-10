@@ -52,7 +52,7 @@ export default async function RootLayout({
             defaultTheme="system"
             enableSystem>
             <Navigation />
-            <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+            <main className="grow container mx-auto px-4 py-8">{children}</main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
